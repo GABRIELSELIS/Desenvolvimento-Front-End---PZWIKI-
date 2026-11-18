@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gameplay de Project Zomboid: ciclo de sobrevivência, combate e furtividade, dificuldades, realismo médico e saúde mental.">
+  <title>PZ Wiki | Gameplay</title>
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icones/icone-32.png">
+  <link rel="apple-touch-icon" href="img/icones/icone-180.png">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-barra container">
+      <a class="marca" href="index.html" aria-label="Project Zomboid Wiki, página inicial">
+        <img src="img/logo.png" alt="Project Zomboid" width="97" height="64">
+        <span class="marca-texto">Wiki fã-feita</span>
+      </a>
+      <button class="menu-botao btn btn-outline-light" id="menu-botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <div class="wiki container">
+    <nav class="lateral collapse d-md-block" id="menu" aria-label="Principal">
+      <h2 class="lateral-titulo">Navegação</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="jogo.html">O jogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="mapa.html">Mapa</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Jogabilidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="gameplay.html">Gameplay</a></li>
+        <li class="nav-item"><a class="nav-link" href="personagem.html">Personagem</a></li>
+        <li class="nav-item"><a class="nav-link" href="traits.html">Traits</a></li>
+        <li class="nav-item"><a class="nav-link" href="zumbis.html">Zumbis</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Comunidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link" href="guia.html">Guia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cemiterio.html">Cemitério</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Links</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="externo nav-link" href="https://pzwiki.net/wiki/Project_Zomboid_Wiki" target="_blank" rel="noopener">Wiki oficial</a></li>
+      </ul>
+    </nav>
+
+    <main class="principal">
+      <p class="trilha"><a href="index.html">Início</a> › Gameplay</p>
+      <h1>Gameplay</h1>
+      <p class="lide">Project Zomboid é um jogo de sobrevivência zumbi isométrico, realista e de mundo aberto. O objetivo não é vencer, e sim ver quanto tempo você consegue durar.</p>
+
+      <div class="intro-wiki">
+        <figure class="cidade-mapa">
+          <img src="img/capturas/reforma-casa.jpg" alt="Quatro personagens de capacete reformando o interior de uma casa" width="701" height="436" loading="lazy">
+          <figcaption>Reformar uma casa é o primeiro passo para ter uma base de verdade.</figcaption>
+        </figure>
+        <aside class="caixa-info" aria-label="Resumo do gameplay">
+          <h3>Em resumo</h3>
+          <dl>
+            <dt>Objetivo</dt>
+            <dd>Sobreviver o máximo possível</dd>
+            <dt>Morte</dt>
+            <dd>Permanente: uma mordida já é o fim</dd>
+            <dt>Ritmo</dt>
+            <dd>Lento, tático e punitivo</dd>
+            <dt>Cenário</dt>
+            <dd>Knox Country, Kentucky</dd>
+          </dl>
+        </aside>
+      </div>
+
+      <section class="secao" aria-labelledby="t-ciclo">
+        <h2 id="t-ciclo">Ciclo principal</h2>
+        <ul>
+          <li><strong>Sobrevivência e saque:</strong> você explora casas abandonadas, lojas e armazéns em Knox Country atrás de comida, água, remédios, ferramentas e armas.</li>
+          <li><strong>Morte permanente e infecção:</strong> a morte é definitiva e apenas uma mordida de zumbi garante o fim do personagem atual.</li>
+          <li><strong>Criação de personagem:</strong> você escolhe uma profissão e equilibra traços positivos e negativos, que definem suas habilidades iniciais.</li>
+          <li><strong>Construção e artesanato:</strong> dá para barrar janelas, erguer muros de madeira, plantar, pescar e montar uma base fortificada.</li>
+          <li><strong>Progressão de habilidades:</strong> ler livros técnicos e praticar ações sobe seus níveis em carpintaria, metalurgia, mecânica, medicina e combate.</li>
+          <li><strong>Necessidades básicas:</strong> fome, sede, cansaço, frio, calor, estresse e tédio pedem atenção constante ao estado físico e mental.</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <img src="img/capturas/curral-vacas.jpg" alt="Curral de madeira com vacas, bezerros e abrigos" width="597" height="335" loading="lazy">
+          <figcaption>Com a Build 42, até criar vacas virou parte da sobrevivência.</figcaption>
+        </figure>
+      </section>
+
+      <section class="secao" aria-labelledby="t-combate">
+        <h2 id="t-combate">Combate e furtividade</h2>
+        <ul>
+          <li><strong>Furtividade primeiro:</strong> fazer barulho ou usar armas de fogo sem preparo atrai hordas enormes, quase impossíveis de deter.</li>
+          <li><strong>Movimentação cautelosa:</strong> agachar, fechar as cortinas e vigiar o nível de ruído são essenciais para não ser visto nem ouvido.</li>
+          <li><strong>Corpo a corpo:</strong> segure o botão direito para mirar, use o esquerdo para atacar com armas brancas e empurre os zumbis para pisoteá-los no chão.</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <img src="img/capturas/horda-barricada.jpg" alt="Pilha de zumbis mortos ao lado de cercas de madeira e metal" width="447" height="447" loading="lazy">
+          <figcaption>O resultado de uma defesa que deu certo, desta vez.</figcaption>
+        </figure>
+      </section>
+
+      <section class="secao" aria-labelledby="t-dificuldade">
+        <h2 id="t-dificuldade">Dificuldade e realismo</h2>
+        <p>O jogo se destaca pelo realismo extremo e por ser punitivo: erros simples geram consequências fatais a longo prazo. A simulação vai muito além de lutar contra monstros e exige controle total sobre o ambiente e o corpo do personagem.</p>
+
+        <h3>Sobrevivência e ambiente</h3>
+        <ul>
+          <li><strong>Colapso da infraestrutura:</strong> depois de algumas semanas, a água encanada e a energia são cortadas para sempre. Resta coletar água da chuva e usar geradores a gasolina.</li>
+          <li><strong>Comida que apodrece:</strong> alimentos frescos estragam rápido sem refrigeração, então é preciso conservar, plantar ou caçar antes que os estoques acabem.</li>
+          <li><strong>Clima e temperatura:</strong> o frio do inverno causa hipotermia e o calor do verão causa superaquecimento, afetando velocidade de movimento e saúde.</li>
+          <li><strong>Eventos aleatórios:</strong> helicópteros militares sobrevoam a área e tiros distantes ecoam pelo mapa, levando hordas inteiras até o seu esconderijo.</li>
+        </ul>
+
+        <h3>Realismo médico e físico</h3>
+        <ul>
+          <li><strong>Ferimentos detalhados:</strong> cada parte do corpo sofre danos próprios, como arranhões, lacerações, queimaduras, fraturas e balas alojadas, que pedem curativos esterilizados, talas ou suturas.</li>
+          <li><strong>Infecções:</strong> feridas sujas causam infecções bacterianas tratáveis, enquanto arranhões e lacerações de zumbis têm chance real de transmitir o vírus fatal.</li>
+          <li><strong>Exaustão e peso:</strong> carregar equipamento demais reduz a velocidade, aumenta o cansaço e enfraquece os golpes.</li>
+          <li><strong>Fome e nutrição:</strong> comer só alimentos calóricos engorda e tira resistência, e a falta de nutrientes causa perda de peso e fraqueza.</li>
+        </ul>
+
+        <figure class="cidade-mapa">
+          <img src="img/capturas/painel-saude.jpg" alt="Painel de Saúde do jogo com a silhueta do corpo, o botão Exercitar-se e o estado corporal OK" width="385" height="415" loading="lazy">
+          <figcaption>O painel de Saúde: botão direito sobre uma parte do corpo abre o menu de tratamento.</figcaption>
+        </figure>
+
+        <h3>Psicologia e detalhes do dia a dia</h3>
+        <ul>
+          <li><strong>Saúde mental:</strong> ficar trancado em casa gera tédio e depressão, deixando o personagem mais lento em ações como transferir itens ou equipar armas.</li>
+          <li><strong>Pânico e estresse:</strong> enfrentar vários zumbis causa pânico, que reduz a precisão com armas de fogo e o dano corpo a corpo.</li>
+          <li><strong>Manutenção:</strong> roupas rasgam e precisam de remendo, armas quebram com o uso e carros exigem peças e combustível.</li>
+          <li><strong>Visão limitada:</strong> o personagem só enxerga dentro do cone frontal, então é fácil ser surpreendido por trás ou ao abrir portas.</li>
+        </ul>
+      </section>
+
+      <nav class="cidade-nav" aria-label="Páginas relacionadas">
+        <a class="btn btn-dark" href="jogo.html" rel="prev">&larr; O jogo</a>
+        <a class="btn btn-dark" href="personagem.html" rel="next">Personagem &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo container">
+      <p>Projeto acadêmico fã-feito. Project Zomboid pertence à The Indie Stone.</p>
+      <div class="rodape-links">
+        <a href="jogo.html">O jogo</a>
+        <a href="guia.html">Guia</a>
+        <a href="cemiterio.html">Cemitério</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/fundo.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/musica.js"></script>
+</body>
+</html>

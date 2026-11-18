@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PZ Wiki | Como nós morremos</title>
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icones/icone-32.png">
+  <link rel="apple-touch-icon" href="img/icones/icone-180.png">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-barra container">
+      <a class="marca" href="index.html" aria-label="Project Zomboid Wiki, página inicial">
+        <img src="img/logo.png" alt="Project Zomboid" width="97" height="64">
+        <span class="marca-texto">Wiki fã-feita</span>
+      </a>
+      <button class="menu-botao btn btn-outline-light" id="menu-botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <div class="wiki container">
+    <nav class="lateral collapse d-md-block" id="menu" aria-label="Principal">
+      <h2 class="lateral-titulo">Navegação</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="jogo.html">O jogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="mapa.html">Mapa</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Jogabilidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="gameplay.html">Gameplay</a></li>
+        <li class="nav-item"><a class="nav-link" href="personagem.html">Personagem</a></li>
+        <li class="nav-item"><a class="nav-link" href="traits.html">Traits</a></li>
+        <li class="nav-item"><a class="nav-link" href="zumbis.html">Zumbis</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Comunidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link" href="guia.html">Guia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cemiterio.html">Cemitério</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Links</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="externo nav-link" href="https://pzwiki.net/wiki/Project_Zomboid_Wiki" target="_blank" rel="noopener">Wiki oficial</a></li>
+      </ul>
+    </nav>
+
+  <main class="principal">
+    <p class="trilha"><a href="index.html">Início</a> › Cemitério</p>
+    <section class="secao" aria-labelledby="titulo-form">
+      <h1 id="titulo-form">Como nós morremos</h1>
+      <p>Todo sobrevivente cai um dia. Conte como foi o seu fim, os registros ficam salvos neste navegador.</p>
+
+      <div class="alert alert-warning aviso-login" role="alert" id="aviso-login" hidden>
+        <p><strong>Só quem tem conta pode registrar uma morte.</strong> Entre ou crie uma conta gratuita para adicionar um novo registro ao cemitério. Qualquer pessoa pode ler os registros abaixo.</p>
+        <div class="aviso-login-acoes">
+          <a class="btn btn-dark" id="aviso-entrar" href="login.html?voltar=cemiterio.html">Entrar</a>
+          <a class="btn btn-dark" id="aviso-criar" href="cadastro.html?voltar=cemiterio.html">Criar conta</a>
+        </div>
+      </div>
+
+      <form class="formulario" id="form-morte" novalidate hidden>
+        <div class="campo">
+          <label class="form-label" for="nome">Nome do sobrevivente</label>
+          <input class="form-control" type="text" id="nome" name="nome" placeholder="Ex.: Doug Walker" required minlength="3" maxlength="40" pattern="[A-Za-zÀ-ÿ ]{3,40}">
+          <span class="dica form-text">Somente letras, de 3 a 40 caracteres.</span>
+        </div>
+
+        <div class="campo">
+          <label class="form-label" for="causa">Causa da morte</label>
+          <select class="form-select" id="causa" name="causa" required>
+            <option value="">Selecione</option>
+            <option>Mordida de zumbi</option>
+            <option>Fome</option>
+            <option>Sede</option>
+            <option>Hemorragia</option>
+            <option>Acidente de carro</option>
+            <option>Incêndio</option>
+            <option>Doença</option>
+            <option>Outra</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label class="form-label" for="dias">Dias sobrevividos</label>
+          <input class="form-control" type="number" id="dias" name="dias" placeholder="Ex.: 12" required min="0" max="9999">
+        </div>
+
+        <div class="campo campo-largo">
+          <label class="form-label" for="historia">Conte como foi</label>
+          <textarea class="form-control" id="historia" name="historia" placeholder="O que aconteceu nos últimos minutos?" required minlength="10" maxlength="300"></textarea>
+          <span class="dica form-text">De 10 a 300 caracteres.</span>
+        </div>
+
+        <p class="mensagem" id="mensagem" role="status"></p>
+
+        <div class="campo-largo">
+          <button type="submit" class="btn btn-dark">Registrar morte</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-tabela">
+      <h2 id="titulo-tabela">Registros</h2>
+      <p id="contador"></p>
+      <div class="tabela-rolagem">
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th scope="col">Sobrevivente</th>
+              <th scope="col">Causa</th>
+              <th scope="col">Dias</th>
+              <th scope="col">Data</th>
+              <th scope="col">História</th>
+              <th scope="col">Registrado por</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-tabela"></tbody>
+        </table>
+      </div>
+      <p></p>
+      <button type="button" class="btn btn-danger" id="limpar-tudo" hidden>Apagar meus registros</button>
+    </section>
+  </main>
+  </div>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo container">
+      <p>Projeto acadêmico fã-feito. Project Zomboid pertence à The Indie Stone.</p>
+      <div class="rodape-links">
+        <a href="jogo.html">O jogo</a>
+        <a href="guia.html">Guia</a>
+        <a href="cemiterio.html">Cemitério</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/fundo.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/musica.js"></script>
+  <script src="js/cemiterio.js"></script>
+</body>
+</html>

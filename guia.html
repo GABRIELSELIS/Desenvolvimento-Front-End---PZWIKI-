@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guia de sobrevivência de Project Zomboid para os primeiros dias: build de personagem, cidade inicial, combate, base e loot.">
+  <title>PZ Wiki | Guia</title>
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icones/icone-32.png">
+  <link rel="apple-touch-icon" href="img/icones/icone-180.png">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-barra container">
+      <a class="marca" href="index.html" aria-label="Project Zomboid Wiki, página inicial">
+        <img src="img/logo.png" alt="Project Zomboid" width="97" height="64">
+        <span class="marca-texto">Wiki fã-feita</span>
+      </a>
+      <button class="menu-botao btn btn-outline-light" id="menu-botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <div class="wiki container">
+    <nav class="lateral collapse d-md-block" id="menu" aria-label="Principal">
+      <h2 class="lateral-titulo">Navegação</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="jogo.html">O jogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="mapa.html">Mapa</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Jogabilidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="gameplay.html">Gameplay</a></li>
+        <li class="nav-item"><a class="nav-link" href="personagem.html">Personagem</a></li>
+        <li class="nav-item"><a class="nav-link" href="traits.html">Traits</a></li>
+        <li class="nav-item"><a class="nav-link" href="zumbis.html">Zumbis</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Comunidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link" href="guia.html">Guia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cemiterio.html">Cemitério</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Links</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="externo nav-link" href="https://pzwiki.net/wiki/Project_Zomboid_Wiki" target="_blank" rel="noopener">Wiki oficial</a></li>
+      </ul>
+    </nav>
+
+    <main class="principal">
+      <p class="trilha"><a href="index.html">Início</a> › Guia</p>
+      <h1>Guia de sobrevivência</h1>
+      <p class="lide">Para durar nos primeiros dias, priorize a furtividade, fuja de combates desnecessários contra hordas e garanta água, comida e uma base segura antes de qualquer outra coisa.</p>
+
+      <div class="intro-wiki">
+        <figure class="cidade-mapa">
+          <img src="img/capturas/sobrevivente-predio.jpg" alt="Sobrevivente diante de um prédio em Knox Country" width="738" height="414" loading="lazy">
+          <figcaption>Os primeiros dias decidem o resto da partida.</figcaption>
+        </figure>
+        <aside class="caixa-info" aria-label="Resumo do guia">
+          <h3>Em resumo</h3>
+          <dl>
+            <dt><a href="#t-build">1. Build</a></dt>
+            <dd>Profissão e traços</dd>
+            <dt><a href="#t-cidade">2. Cidade</a></dt>
+            <dd>Onde começar</dd>
+            <dt><a href="#t-combate">3. Combate</a></dt>
+            <dd>Furtividade e hordas</dd>
+            <dt><a href="#t-base">4. Base</a></dt>
+            <dd>Onde ficar</dd>
+            <dt><a href="#t-loot">5. Loot</a></dt>
+            <dd>O que pegar primeiro</dd>
+          </dl>
+        </aside>
+      </div>
+
+      <section class="secao" aria-labelledby="t-comeco">
+        <h2 id="t-comeco">Primeiros passos</h2>
+        <ul>
+          <li><strong>Escolha o modo certo:</strong> comece em Sobrevivente ou Apocalipse, sem mods, para aprender as mecânicas base. O Modo Sandbox serve para ajustar a dificuldade e o respawn.</li>
+          <li><strong>Equilibre os traços:</strong> combine positivos úteis com negativos fáceis de contornar. Veja a <a href="traits.html">lista completa de Traits</a>.</li>
+          <li><strong>Comece em uma cidade tranquila:</strong> Rosewood e Riverside são mais amigáveis para iniciantes do que West Point ou Louisville.</li>
+        </ul>
+      </section>
+
+      <section class="secao" aria-labelledby="t-build">
+        <h2 id="t-build">1. Monte sua build</h2>
+        <p>A ideia é escolher uma profissão pelo seu estilo de jogo e usar traços negativos fáceis de contornar para pagar vantagens físicas e de percepção.</p>
+        <figure class="cidade-mapa">
+          <img src="img/personagem/tela-criacao.jpg" alt="Tela de criação de personagem com profissões, traços e pontos disponíveis" width="691" height="444" loading="lazy">
+          <figcaption>Na tela de criação, termine a ficha com zero ou mais pontos sobrando.</figcaption>
+        </figure>
+
+        <h3>Profissão</h3>
+        <div class="tabela-rolagem">
+          <table class="tabela">
+            <thead><tr><th scope="col">Profissão</th><th scope="col">Para quem é</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Bombeiro</th><td>Combate corpo a corpo, com bônus em força, condicionamento e machados.</td></tr>
+              <tr><th scope="row">Ladrão</th><td>Furtividade e saque: faz ligação direta em carros desde o dia 1.</td></tr>
+              <tr><th scope="row">Carpinteiro</th><td>Construir bases e barreiras, com bônus altos de Carpintaria.</td></tr>
+              <tr><th scope="row">Desempregado</th><td>Sem bônus, mas dá oito pontos extras para gastar em traços.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Traços positivos essenciais</h3>
+        <div class="tabela-rolagem">
+          <table class="tabela tabela-tracos">
+            <thead><tr><th scope="col" class="col-icone">Ícone</th><th scope="col">Traço</th><th scope="col">Custo</th><th scope="col">Por que escolher</th></tr></thead>
+            <tbody>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/fastlearner.png" alt="Ícone do traço Fast Learner" width="36" height="36" loading="lazy"></td><th scope="row">Fast Learner</th><td><span class="custo">-6</span></td><td>130% de XP em todas as perícias, exceto Strength e Fitness.</td></tr>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/keenhearing.png" alt="Ícone do traço Keen Hearing" width="36" height="36" loading="lazy"></td><th scope="row">Keen Hearing</th><td><span class="custo">-6</span></td><td>Raio de percepção maior: zumbis vindo por trás aparecem bem mais cedo.</td></tr>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/nightvision.png" alt="Ícone do traço Cat's Eyes" width="36" height="36" loading="lazy"></td><th scope="row">Cat's Eyes</th><td><span class="custo">-3</span></td><td>Enxerga melhor à noite, o que ajuda a saquear no escuro.</td></tr>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/dextrous.png" alt="Ícone do traço Dextrous" width="36" height="36" loading="lazy"></td><th scope="row">Dextrous</th><td><span class="custo">-2</span></td><td>Transfere itens entre mochilas e contêineres na metade do tempo.</td></tr>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/outdoorsman.png" alt="Ícone do traço Outdoorsy" width="36" height="36" loading="lazy"></td><th scope="row">Outdoorsy</th><td><span class="custo">-2</span></td><td>Sofre menos com clima severo e quase não se arranha em árvores.</td></tr>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/gymnast.png" alt="Ícone do traço Gymnast" width="36" height="36" loading="lazy"></td><th scope="row">Gymnast</th><td><span class="custo">-5</span></td><td>+1 em Lightfooted e +1 em Nimble, úteis para se mover rápido.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Traços negativos que valem os pontos</h3>
+        <div class="tabela-rolagem">
+          <table class="tabela tabela-tracos">
+            <thead><tr><th scope="col" class="col-icone">Ícone</th><th scope="col">Traço</th><th scope="col">Pontos</th><th scope="col">Como contornar</th></tr></thead>
+            <tbody>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/neg-smoker.png" alt="Ícone do traço Smoker" width="36" height="36" loading="lazy"></td><th scope="row">Smoker</th><td><span class="custo custo-negativo">+3</span></td><td>Fume cigarros achados em zumbis e carros para segurar a infelicidade.</td></tr>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/neg-weakstomach.png" alt="Ícone do traço Weak Stomach" width="36" height="36" loading="lazy"></td><th scope="row">Weak Stomach</th><td><span class="custo custo-negativo">+2</span></td><td>Evite comida podre, queimada ou crua.</td></tr>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/neg-shortsighted.png" alt="Ícone do traço Short Sighted" width="36" height="36" loading="lazy"></td><th scope="row">Short Sighted</th><td><span class="custo custo-negativo">+2</span></td><td>Enxerga menos longe. Use óculos para reduzir o efeito.</td></tr>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/neg-slowreader.png" alt="Ícone do traço Slow Reader" width="36" height="36" loading="lazy"></td><th scope="row">Slow Reader</th><td><span class="custo custo-negativo">+2</span></td><td>Só pede mais tempo seguro na base para ler livros de perícia.</td></tr>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/neg-slowhealer.png" alt="Ícone do traço Slow Healer" width="36" height="36" loading="lazy"></td><th scope="row">Slow Healer</th><td><span class="custo custo-negativo">+3</span></td><td>Recupera-se mais devagar de ferimentos; planeje descansos mais longos.</td></tr>
+              <tr><td class="col-icone"><img class="icone-traco" src="img/traits/neg-conspicuous.png" alt="Ícone do traço Conspicuous" width="36" height="36" loading="lazy"></td><th scope="row">Conspicuous</th><td><span class="custo custo-negativo">+4</span></td><td>Zumbis notam você mais fácil. Use paredes e obstáculos como cobertura.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Exemplo de build para iniciantes</h3>
+        <ol class="passos">
+          <li>Escolha a profissão <strong>Bombeiro</strong>, para ter boa resistência física e combate sólido.</li>
+          <li>Pegue os negativos <strong>Smoker</strong>, <strong>Weak Stomach</strong>, <strong>Short Sighted</strong>, <strong>Slow Reader</strong> e <strong>Slow Healer</strong> para acumular pontos.</li>
+          <li>Gaste os pontos em <strong>Fast Learner</strong>, <strong>Keen Hearing</strong>, <strong>Cat's Eyes</strong>, <strong>Dextrous</strong> e <strong>Outdoorsy</strong>.</li>
+          <li>Confira os custos exatos na tela de criação: eles podem mudar de uma versão para outra.</li>
+        </ol>
+      </section>
+
+      <section class="secao" aria-labelledby="t-cidade">
+        <h2 id="t-cidade">2. Escolha a cidade inicial</h2>
+        <figure class="cidade-mapa">
+          <a href="img/mapa/rosewood.jpg" target="_blank" rel="noopener" title="Abrir o mapa em tamanho real">
+            <img src="img/mapa/rosewood.jpg" alt="Mapa aéreo de Rosewood, uma cidade pequena cercada por campos" width="738" height="354" loading="lazy">
+          </a>
+          <figcaption>Rosewood, a favorita de quem está começando. Clique para ampliar.</figcaption>
+        </figure>
+        <div class="tabela-rolagem">
+          <table class="tabela">
+            <thead><tr><th scope="col">Cidade</th><th scope="col">Dificuldade</th><th scope="col">Pontos fortes</th><th scope="col">Principais riscos</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><a href="cidade-rosewood.html">Rosewood</a></th><td>Baixa</td><td>Pequena e compacta, com quartel dos bombeiros e delegacia bem próximos.</td><td>Penitenciária a oeste, com muitos zumbis.</td></tr>
+              <tr><th scope="row"><a href="cidade-riverside.html">Riverside</a></th><td>Baixa a média</td><td>Bairros espaçosos, menos hordas na área nobre e condomínio fechado a leste.</td><td>Sem corpo de bombeiros fixo, com menos variedade de recursos.</td></tr>
+              <tr><th scope="row"><a href="cidade-muldraugh.html">Muldraugh</a></th><td>Média a alta</td><td>Armazéns industriais ao norte e uma clínica médica.</td><td>Rodovia principal com tráfego intenso de zumbis.</td></tr>
+              <tr><th scope="row"><a href="cidade-westpoint.html">West Point</a></th><td>Alta</td><td>Loja de armas, loja de ferramentas e mansões isoladas a oeste.</td><td>Construções coladas e população enorme no centro.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Se ainda está aprendendo, comece por Rosewood. Para um começo calmo, com mais espaço para montar a base, vá de Riverside. West Point só vale quando você já domina combate e furtividade. Veja todas no <a href="mapa.html">Mapa</a>.</p>
+      </section>
+
+      <section class="secao" aria-labelledby="t-combate">
+        <h2 id="t-combate">3. Combate e furtividade</h2>
+        <ul>
+          <li><strong>Evite lutas desnecessárias:</strong> barulho atrai hordas. Se não precisa lutar, não lute.</li>
+          <li><strong>Ande em vez de correr:</strong> contra um grupo pequeno você não precisa sair em disparada, e andar poupa fôlego.</li>
+          <li><strong>Pastoreie:</strong> puxe poucos zumbis de cada vez e confira se não há mais nenhum atrás de você.</li>
+          <li><strong>Derrube e pisoteie:</strong> empurre com a barra de espaço, fique sobre o zumbi caído para ele não levantar e mire na cabeça.</li>
+          <li><strong>Agache-se (Ctrl):</strong> reduz o ruído e a chance de ser notado.</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <img src="img/capturas/horda-barricada.jpg" alt="Pilha de zumbis mortos ao lado de cercas de madeira e metal" width="447" height="447" loading="lazy">
+          <figcaption>Uma defesa bem montada vale mais do que coragem.</figcaption>
+        </figure>
+        <p>Para mais detalhes sobre comportamento e perigos, veja a página de <a href="zumbis.html">Zumbis</a>.</p>
+      </section>
+
+      <section class="secao" aria-labelledby="t-base">
+        <h2 id="t-base">4. Escolha e proteja sua base</h2>
+        <ul>
+          <li><strong>Localização:</strong> prefira casas na periferia ou imóveis com muros altos, longe do centro e das hordas.</li>
+          <li><strong>Recursos por perto:</strong> floresta para lenha, posto de gasolina para combustível e rio ou lago para pesca e água.</li>
+          <li><strong>Segundo andar:</strong> durma no pavimento de cima e cubra as janelas com lençóis ou cortinas para os zumbis não verem você.</li>
+          <li><strong>Defesa:</strong> barre portas e janelas do térreo com tábuas e pregos, e deixe uma corda de lençol numa janela superior como rota de fuga.</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <img src="img/capturas/reforma-casa.jpg" alt="Quatro personagens de capacete reformando o interior de uma casa" width="701" height="436" loading="lazy">
+          <figcaption>Reformar uma casa é o primeiro passo para ter uma base de verdade.</figcaption>
+        </figure>
+
+        <h3>Água, comida e TV</h3>
+        <ul>
+          <li><strong>Água primeiro:</strong> encha garrafas e panelas logo no início, antes que a água encanada seja cortada.</li>
+          <li><strong>Perecíveis antes:</strong> coma frutas, carnes e laticínios das geladeiras enquanto há energia e guarde os enlatados para depois.</li>
+          <li><strong>Aproveite a TV:</strong> nos primeiros dias, sintonize o canal Life and Living (por volta das 6h, 12h e 18h) para ganhar XP em perícias do dia a dia antes que a energia acabe.</li>
+        </ul>
+      </section>
+
+      <section class="secao" aria-labelledby="t-loot">
+        <h2 id="t-loot">5. Prioridades de loot</h2>
+        <ul class="pois">
+          <li><strong>Ferramentas:</strong> martelo, serra e chave de fenda, para desmontar móveis e construir.</li>
+          <li><strong>Mochila:</strong> mochilas e pochetes ampliam a carga e reduzem o peso que você sente.</li>
+          <li><strong>Comida perecível:</strong> o que está nas geladeiras vai estragar primeiro.</li>
+          <li><strong>Livros e revistas:</strong> procure em livrarias, escolas e correios volumes de Carpintaria e Mecânica.</li>
+          <li><strong>Armas e proteção:</strong> delegacias, lojas de ferramentas e quartéis rendem machados, tacos e roupas mais resistentes.</li>
+        </ul>
+
+        <h3>Organize o saque</h3>
+        <ol class="passos">
+          <li>Anote no mapa os prédios já vasculhados, os carros com chave e os locais com geradores.</li>
+          <li>Estacione o carro virado para a saída antes de entrar em um prédio.</li>
+          <li>Separe o estoque da base em caixas por categoria: ferramentas, remédios, munição e comida.</li>
+        </ol>
+      </section>
+
+      <nav class="cidade-nav" aria-label="Páginas relacionadas">
+        <a class="btn btn-dark" href="fotos.html" rel="prev">&larr; Fotos</a>
+        <a class="btn btn-dark" href="cemiterio.html" rel="next">Cemitério &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo container">
+      <p>Projeto acadêmico fã-feito. Project Zomboid pertence à The Indie Stone.</p>
+      <div class="rodape-links">
+        <a href="jogo.html">O jogo</a>
+        <a href="guia.html">Guia</a>
+        <a href="cemiterio.html">Cemitério</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/fundo.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/musica.js"></script>
+</body>
+</html>

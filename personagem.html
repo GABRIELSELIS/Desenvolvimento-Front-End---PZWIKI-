@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Criação de personagem em Project Zomboid: pontos, profissões, traços positivos e negativos e estratégias para começar bem.">
+  <title>PZ Wiki | Personagem</title>
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icones/icone-32.png">
+  <link rel="apple-touch-icon" href="img/icones/icone-180.png">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-barra container">
+      <a class="marca" href="index.html" aria-label="Project Zomboid Wiki, página inicial">
+        <img src="img/logo.png" alt="Project Zomboid" width="97" height="64">
+        <span class="marca-texto">Wiki fã-feita</span>
+      </a>
+      <button class="menu-botao btn btn-outline-light" id="menu-botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <div class="wiki container">
+    <nav class="lateral collapse d-md-block" id="menu" aria-label="Principal">
+      <h2 class="lateral-titulo">Navegação</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="jogo.html">O jogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="mapa.html">Mapa</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Jogabilidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="gameplay.html">Gameplay</a></li>
+        <li class="nav-item"><a class="nav-link" href="personagem.html">Personagem</a></li>
+        <li class="nav-item"><a class="nav-link" href="traits.html">Traits</a></li>
+        <li class="nav-item"><a class="nav-link" href="zumbis.html">Zumbis</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Comunidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link" href="guia.html">Guia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cemiterio.html">Cemitério</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Links</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="externo nav-link" href="https://pzwiki.net/wiki/Project_Zomboid_Wiki" target="_blank" rel="noopener">Wiki oficial</a></li>
+      </ul>
+    </nav>
+
+    <main class="principal">
+      <p class="trilha"><a href="index.html">Início</a> › Personagem</p>
+      <h1>Criação de personagem</h1>
+      <p class="lide">Antes do apocalipse, você define quem o sobrevivente era. A criação funciona como um equilíbrio de pontos: escolha uma profissão, combine vantagens e desvantagens e termine a ficha com zero ou mais pontos disponíveis.</p>
+
+      <div class="personagens">
+        <figure class="foto-personagem">
+          <img src="img/personagem/terno.jpg" alt="Personagem careca de terno preto, camisa branca e gravata vermelha" width="181" height="362" loading="lazy">
+          <figcaption>Personagem inspirado no Hitman, da série de jogos Hitman.</figcaption>
+        </figure>
+        <figure class="foto-personagem">
+          <img src="img/personagem/lenco-vermelho.jpg" alt="Personagem de barba grisalha, lenço vermelho e jaqueta de couro preta" width="181" height="362" loading="lazy">
+          <figcaption>Personagem inspirado no Negan, da série The Walking Dead.</figcaption>
+        </figure>
+      </div>
+      <p>Você pode criar o personagem do jeito que quiser e personalizá-lo de infinitas maneiras: nome, aparência, roupas, profissão e traços.</p>
+
+      <section class="secao" aria-labelledby="t-estrutura">
+        <h2 id="t-estrutura">Estrutura da criação</h2>
+        <ul>
+          <li><strong>Ponto de partida:</strong> a cidade inicial define a dificuldade dos primeiros dias, por causa da densidade de zumbis e dos recursos disponíveis.</li>
+          <li><strong>Profissões:</strong> cada ocupação custa ou concede pontos e dá bônus permanentes de experiência em habilidades específicas, além de liberar receitas exclusivas.</li>
+          <li><strong>Traços positivos:</strong> vantagens que consomem pontos, como mais força física, aprender rápido ou enxergar melhor no escuro.</li>
+          <li><strong>Traços negativos:</strong> defeitos que devolvem pontos para gastar, como precisar fumar, ter sede excessiva ou ser desajeitado.</li>
+          <li><strong>Aparência e nome:</strong> você personaliza o visual, as roupas iniciais e o nome, sem impacto direto nas mecânicas de sobrevivência.</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <img src="img/personagem/tela-criacao.jpg" alt="Tela de seleção de profissão e traços, com a lista de profissões à esquerda, traços disponíveis e escolhidos no centro, perícias à direita e o contador de pontos no canto" width="691" height="444" loading="lazy">
+          <figcaption>A tela de criação: profissão à esquerda, traços no centro e os pontos que sobram no canto inferior direito.</figcaption>
+        </figure>
+      </section>
+
+      <section class="secao" aria-labelledby="t-profissoes">
+        <h2 id="t-profissoes">Profissões de destaque</h2>
+        <div class="tabela-rolagem">
+          <table class="tabela">
+            <thead><tr><th scope="col">Profissão</th><th scope="col">O que oferece</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Desempregado</th><td>Nenhum bônus inicial, mas dá oito pontos extras para investir livremente em traços.</td></tr>
+              <tr><th scope="row">Bombeiro</th><td>Ótimo para combate e sobrevivência física, com bônus elevados em força, condicionamento e uso de machados.</td></tr>
+              <tr><th scope="row">Carpinteiro</th><td>Facilita construir muros, barreiras e coletores de água logo nos primeiros dias.</td></tr>
+              <tr><th scope="row">Ladrão</th><td>Faz ligação direta em carros desde o início e melhora a movimentação furtiva.</td></tr>
+              <tr><th scope="row">Policial</th><td>Focado em armas de fogo, com alta precisão e recarga rápida.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="secao" aria-labelledby="t-tracos">
+        <h2 id="t-tracos">Estratégia com traços</h2>
+        <ul>
+          <li><strong>Negativos gerenciáveis:</strong> fumante, miopia e estômago fraco rendem muitos pontos e são fáceis de contornar com itens comuns do mapa.</li>
+          <li><strong>Positivos essenciais:</strong> atlético, forte e aprendiz rápido aceleram a progressão e aumentam a capacidade de carga e o dano.</li>
+          <li><strong>Multiplicadores de experiência:</strong> apenas um ponto inicial em uma habilidade já acelera muito a evolução dela durante a partida.</li>
+          <li><strong>Fator sobrevivência:</strong> não existem personagens prontos com história fixa. Cada ficha é uma vida nova, que dura até o próximo erro fatal.</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <img src="img/personagem/tracos-lista.jpg" alt="Ficha do guarda-florestal Pat Creel com seus traços, a lista de traços negativos em vermelho com o custo em pontos e a lista de traços positivos em verde" width="738" height="415" loading="lazy">
+          <figcaption>Traços negativos (em vermelho) devolvem pontos; os positivos (em verde) custam pontos. Ao lado, as perícias que a profissão já dá.</figcaption>
+        </figure>
+        <p>Veja a lista completa na página de <a href="traits.html">Traits</a>.</p>
+      </section>
+
+      <section class="secao" aria-labelledby="t-ficha">
+        <h2 id="t-ficha">A ficha em jogo</h2>
+        <figure class="cidade-mapa">
+          <img src="img/personagem/painel-info.jpg" alt="Painel de Informações do jogo mostrando o personagem James Sunderland, seus traços, arma favorita, zumbis mortos e tempo de sobrevivência" width="417" height="393" loading="lazy">
+          <figcaption>Aba Info: peso, traços, arma favorita, zumbis mortos e há quanto tempo o personagem sobrevive (aqui, 222 zumbis em 6 dias e 19 horas).</figcaption>
+        </figure>
+        <p>Depois de criado, o painel mostra tudo sobre o seu sobrevivente. Ao lado ficam as abas Habilidades, Saúde, Proteção e Temperatura, que acompanham o corpo e as perícias ao longo da partida.</p>
+      </section>
+
+      <nav class="cidade-nav" aria-label="Páginas relacionadas">
+        <a class="btn btn-dark" href="gameplay.html" rel="prev">&larr; Gameplay</a>
+        <a class="btn btn-dark" href="traits.html" rel="next">Traits &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo container">
+      <p>Projeto acadêmico fã-feito. Project Zomboid pertence à The Indie Stone.</p>
+      <div class="rodape-links">
+        <a href="jogo.html">O jogo</a>
+        <a href="guia.html">Guia</a>
+        <a href="cemiterio.html">Cemitério</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/fundo.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/musica.js"></script>
+</body>
+</html>

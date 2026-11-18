@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zumbis em Project Zomboid: tipos, comportamento, aparência, equipamentos e como lidar com cada um no combate.">
+  <title>PZ Wiki | Zumbis</title>
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icones/icone-32.png">
+  <link rel="apple-touch-icon" href="img/icones/icone-180.png">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-barra container">
+      <a class="marca" href="index.html" aria-label="Project Zomboid Wiki, página inicial">
+        <img src="img/logo.png" alt="Project Zomboid" width="97" height="64">
+        <span class="marca-texto">Wiki fã-feita</span>
+      </a>
+      <button class="menu-botao btn btn-outline-light" id="menu-botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <div class="wiki container">
+    <nav class="lateral collapse d-md-block" id="menu" aria-label="Principal">
+      <h2 class="lateral-titulo">Navegação</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="jogo.html">O jogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="mapa.html">Mapa</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Jogabilidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="gameplay.html">Gameplay</a></li>
+        <li class="nav-item"><a class="nav-link" href="personagem.html">Personagem</a></li>
+        <li class="nav-item"><a class="nav-link" href="traits.html">Traits</a></li>
+        <li class="nav-item"><a class="nav-link" href="zumbis.html">Zumbis</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Comunidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link" href="guia.html">Guia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cemiterio.html">Cemitério</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Links</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="externo nav-link" href="https://pzwiki.net/wiki/Project_Zomboid_Wiki" target="_blank" rel="noopener">Wiki oficial</a></li>
+      </ul>
+    </nav>
+
+    <main class="principal">
+      <p class="trilha"><a href="index.html">Início</a> › Zumbis</p>
+      <h1>Zumbis</h1>
+      <p class="lide">Os zumbis (também chamados de “zeds” ou “infectados”) são a principal ameaça de Knox Country. Sozinhos são lentos, mas em grandes hordas se tornam o maior perigo do jogo.</p>
+
+      <div class="intro-wiki">
+        <figure class="cidade-mapa">
+          <img src="img/zumbis/horda-carro.jpg" alt="Enorme horda de zumbis cercando um carro branco" width="738" height="414" loading="lazy">
+          <figcaption>Uma horda cercando um veículo: o pior cenário possível.</figcaption>
+        </figure>
+        <aside class="caixa-info" aria-label="Resumo dos zumbis">
+          <h3>Em resumo</h3>
+          <dl>
+            <dt>Padrão</dt>
+            <dd>Lentos, inspirados em George A. Romero</dd>
+            <dt>Mais perigosos</dt>
+            <dd>Em grandes hordas</dd>
+            <dt>Infecção</dt>
+            <dd>Doença de Knox, por mordida (arranhões e lacerações têm chance menor)</dd>
+            <dt>Concentração</dt>
+            <dd>Alta nas cidades, baixa no campo</dd>
+          </dl>
+        </aside>
+      </div>
+
+      <section class="secao" aria-labelledby="t-mecanicas">
+        <h2 id="t-mecanicas">Principais mecânicas</h2>
+        <ul>
+          <li><strong>Comportamento:</strong> por padrão os zumbis são lentos e só se tornam realmente perigosos quando cercam o jogador em grandes grupos.</li>
+          <li><strong>População:</strong> a concentração é muito maior nos centros urbanos, como Louisville, moderada nos arredores das cidades e baixa em áreas rurais.</li>
+          <li><strong>Combate e infecção:</strong> ao atacar, o zumbi agarra o sobrevivente. Mordidas garantem a infecção pela Doença de Knox; arranhões e lacerações infectam com menos frequência.</li>
+          <li><strong>Personalização:</strong> no modo Sandbox é possível alterar velocidade, força, sentidos (visão e audição) e o tamanho da população.</li>
+          <li><strong>Depois da morte:</strong> se o seu personagem morrer infectado e o corpo não for queimado, ele se levanta como um zumbi controlado pelo jogo.</li>
+        </ul>
+      </section>
+
+      <section class="secao" aria-labelledby="t-tipos">
+        <h2 id="t-tipos">Tipos de zumbis</h2>
+        <p>O jogo não tem zumbis “mutantes” especiais. A PZwiki classifica os infectados pelo modo de se mover e pelas variantes de roupa e saque.</p>
+        <h3>Por comportamento e velocidade</h3>
+        <ul>
+          <li><strong>Andarilhos (Shamblers):</strong> os zumbis lentos padrão, perigosos principalmente quando cercam o jogador.</li>
+          <li><strong>Andarilhos rápidos (Fast Shamblers):</strong> andam num passo próximo ao de uma caminhada rápida do personagem e são o padrão da maioria dos modos atuais.</li>
+          <li><strong>Rastejadores (Crawlers):</strong> ficam caídos e se arrastam sem fazer muito barulho, escondendo-se na grama alta ou em plantações. Podem derrubar o sobrevivente.</li>
+          <li><strong>Velocistas (Sprinters):</strong> correm na velocidade máxima do jogador e só aparecem em desafios específicos ou quando ativados no Sandbox.</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <img src="img/zumbis/velocistas.jpg" alt="Zumbis correndo pela grama e pela calçada" width="713" height="429" loading="lazy">
+          <figcaption>Velocistas em plena corrida.</figcaption>
+        </figure>
+        <h3>Por traje e saque</h3>
+        <ul>
+          <li><strong>Civis comuns:</strong> camisetas, jeans e jaquetas, com itens básicos como relógios, carteiras ou joias.</li>
+          <li><strong>Profissionais e autoridades:</strong> policiais, bombeiros, médicos e detentos aparecem perto de seus locais de trabalho e carregam roupas de proteção ou ferramentas específicas.</li>
+          <li><strong>Sobreviventes e militares:</strong> variantes mais raras, com camuflagem, capacetes, armaduras e mochilas grandes com comida, armas e mapas anotados.</li>
+          <li><strong>Raros e easter eggs:</strong> personagens da cultura pop (Jason Voorhees, Rick Grimes), mascotes como o Spiffo e figuras da história do jogo, como os repórteres Jackie Jaye e Frank Hemingway.</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <img src="img/zumbis/horda-perseguicao.jpg" alt="Grupo de zumbis perseguindo um sobrevivente armado com um taco" width="738" height="414" loading="lazy">
+          <figcaption>Um sobrevivente fugindo de um grupo em plena rua.</figcaption>
+        </figure>
+      </section>
+
+      <section class="secao" aria-labelledby="t-combate">
+        <h2 id="t-combate">Como lidar com cada tipo</h2>
+        <p>O segredo é controlar distância e posicionamento, adaptando a tática à velocidade de cada variante.</p>
+        <h3>Andarilhos e andarilhos rápidos</h3>
+        <ul>
+          <li><strong>Ande para trás enquanto ataca:</strong> a caminhada em postura de combate mantém a distância sem gastar vigor.</li>
+          <li><strong>Empurre e pisoteie:</strong> use a barra de espaço para derrubar e o botão esquerdo, mirando a cabeça, para finalizar sem gastar a durabilidade da arma.</li>
+          <li><strong>Use cercas baixas e janelas:</strong> os zumbis caem de bruços ao pular e ficam vulneráveis por alguns segundos.</li>
+          <li><strong>Divida a horda:</strong> evite enfrentar mais de três ou quatro ao mesmo tempo em campo aberto e quebre a linha de visão com esquinas e árvores.</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <img src="img/zumbis/horda-mira.jpg" alt="Sobrevivente com espingarda mirando uma horda, com os zumbis mais próximos destacados em laranja" width="597" height="335" loading="lazy">
+          <figcaption>O contorno de mira destaca os alvos mais próximos.</figcaption>
+        </figure>
+        <h3>Rastejadores</h3>
+        <ul>
+          <li><strong>Ative o contorno de mira:</strong> a opção Aim Outline ajuda a enxergar rastejadores escondidos na grama.</li>
+          <li><strong>Não passe pela frente:</strong> o ataque deles pode agarrar suas pernas e derrubar o personagem.</li>
+          <li><strong>Ataque por trás ou pelos lados:</strong> pela retaguarda eles não conseguem girar rápido para morder.</li>
+          <li><strong>Deixe-os por último:</strong> se houver zumbis em pé, resolva primeiro os mais rápidos.</li>
+        </ul>
+        <h3>Velocistas</h3>
+        <ul>
+          <li><strong>Evite combate aberto:</strong> nunca enfrente mais de dois sem uma barreira física.</li>
+          <li><strong>Abuse de cercas e janelas:</strong> fique logo depois do obstáculo e golpeie quando eles caírem ao atravessar.</li>
+          <li><strong>Use carros como escudo:</strong> estacione encostado em uma parede ou árvore e lute pela janela para não ser cercado.</li>
+          <li><strong>Feche as portas na fuga:</strong> cada porta fechada atrasa a perseguição e dá tempo de sair pelos fundos.</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <video class="midia" controls preload="none" poster="img/zumbis/video-capa.jpg" width="1280" height="720">
+            <source src="video/zumbis.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+          <figcaption>Vídeo: sobreviventes enfrentando zumbis ao lado de um caminhão militar, na neve.</figcaption>
+        </figure>
+      </section>
+
+      <section class="secao" aria-labelledby="t-loot">
+        <h2 id="t-loot">Onde achar os zumbis mais bem equipados</h2>
+        <h3>Locais fixos (zumbis militares)</h3>
+        <ul>
+          <li><strong>Posto de controle de Louisville:</strong> na entrada sul da cidade, com dezenas de militares e tendas cheias de caixas de armas, coletes e mochilas.</li>
+          <li><strong>Base militar secreta (oeste de Rosewood):</strong> no fim de uma longa estrada de terra na floresta, com alta densidade de soldados e as melhores roupas táticas.</li>
+          <li><strong>Quartéis ao norte de Rosewood:</strong> complexo mais acessível, com soldados de coletes balísticos e mochilas militares.</li>
+          <li><strong>Loja de excedentes militares:</strong> a noroeste do mapa, perto de Doe Valley e Fallas Lake.</li>
+          <li><strong>Delegacias e quartéis de bombeiros:</strong> os pontos mais seguros no começo do jogo para achar policiais (coldres e pistolas) e bombeiros (roupas resistentes).</li>
+        </ul>
+        <figure class="cidade-mapa">
+          <img src="img/zumbis/militares-cerca.jpg" alt="Zumbis militares e uma horda atrás de uma cerca de arame farpado" width="605" height="507" loading="lazy">
+          <figcaption>Zumbis militares atrás de uma cerca de arame farpado.</figcaption>
+        </figure>
+        <h3>Sobreviventes zumbificados (eventos aleatórios)</h3>
+        <ul>
+          <li><strong>Casas barricadas:</strong> abrigam zumbis com mochilas grandes, machetes, machados e armas de fogo.</li>
+          <li><strong>Bloqueios na estrada:</strong> acidentes com viaturas, ambulâncias ou veículos militares costumam ter zumbis equipados por perto.</li>
+          <li><strong>Invasões militares:</strong> em algumas casas e prédios há corpos no chão junto de soldados zumbificados com equipamento tático completo.</li>
+        </ul>
+      </section>
+
+      <section class="secao" aria-labelledby="t-aparencia">
+        <h2 id="t-aparencia">Aparência</h2>
+        <ul>
+          <li><strong>Pele e ferimentos:</strong> pele pálida ou esverdeada, com sangue, mordidas e arranhões espalhados pelo corpo e pelas roupas.</li>
+          <li><strong>Decomposição:</strong> com o passar dos meses os zumbis ficam mais magros e de pele escura. É um efeito apenas visual, sem alterar força, velocidade ou comportamento.</li>
+          <li><strong>Postura:</strong> caminham curvados e mancando, e alguns surgem caídos para se arrastar pelo chão.</li>
+          <li><strong>Roupas:</strong> são mais de 150 conjuntos definidos pela região do mapa, como uniformes médicos em hospitais e macacões em oficinas, quase sempre sujos, rasgados ou furados.</li>
+          <li><strong>Acessórios:</strong> relógios, joias, óculos, chapéus, mochilas e até facas, chaves de fenda ou machetes cravados no corpo.</li>
+        </ul>
+        <div class="galeria">
+          <figure class="foto"><img src="img/zumbis/formas-incomuns.jpg" alt="Criaturas deformadas de cores variadas em um gramado" width="597" height="335" loading="lazy"><figcaption><strong>Formas incomuns</strong>Aparências extremas como esta não fazem parte do jogo base.</figcaption></figure>
+          <figure class="foto"><img src="img/zumbis/aparencias-estranhas.jpg" alt="Duas figuras deformadas ao lado de um sobrevivente de blusa verde em um corredor" width="256" height="256" loading="lazy"><figcaption><strong>Visuais alternativos</strong>Também fora do padrão do jogo base.</figcaption></figure>
+        </div>
+      </section>
+
+      <nav class="cidade-nav" aria-label="Páginas relacionadas">
+        <a class="btn btn-dark" href="traits.html" rel="prev">&larr; Traits</a>
+        <a class="btn btn-dark" href="fotos.html" rel="next">Fotos &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo container">
+      <p>Projeto acadêmico fã-feito. Project Zomboid pertence à The Indie Stone.</p>
+      <div class="rodape-links">
+        <a href="jogo.html">O jogo</a>
+        <a href="guia.html">Guia</a>
+        <a href="cemiterio.html">Cemitério</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/fundo.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/musica.js"></script>
+</body>
+</html>

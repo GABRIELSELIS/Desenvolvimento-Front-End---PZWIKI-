@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PZ Wiki | Contato</title>
+  <style>
+    #form-contato select:invalid { color: #4a4f46; }
+    #form-contato textarea { min-height: 150px; }
+    .contato-ajuda li { margin-bottom: 0.4rem; }
+  </style>
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icones/icone-32.png">
+  <link rel="apple-touch-icon" href="img/icones/icone-180.png">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-barra container">
+      <a class="marca" href="index.html" aria-label="Project Zomboid Wiki, página inicial">
+        <img src="img/logo.png" alt="Project Zomboid" width="97" height="64">
+        <span class="marca-texto">Wiki fã-feita</span>
+      </a>
+      <button class="menu-botao btn btn-outline-light" id="menu-botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <div class="wiki container">
+    <nav class="lateral collapse d-md-block" id="menu" aria-label="Principal">
+      <h2 class="lateral-titulo">Navegação</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="jogo.html">O jogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="mapa.html">Mapa</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Jogabilidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="gameplay.html">Gameplay</a></li>
+        <li class="nav-item"><a class="nav-link" href="personagem.html">Personagem</a></li>
+        <li class="nav-item"><a class="nav-link" href="traits.html">Traits</a></li>
+        <li class="nav-item"><a class="nav-link" href="zumbis.html">Zumbis</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Comunidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link" href="guia.html">Guia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cemiterio.html">Cemitério</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Links</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="externo nav-link" href="https://pzwiki.net/wiki/Project_Zomboid_Wiki" target="_blank" rel="noopener">Wiki oficial</a></li>
+      </ul>
+    </nav>
+
+  <main class="principal">
+    <p class="trilha"><a href="index.html">Início</a> › Contato</p>
+    <section class="secao" aria-labelledby="titulo-form">
+      <h1 id="titulo-form">Contato</h1>
+      <p>Encontrou um erro, tem uma sugestão ou quer corrigir alguma informação da wiki? Escreva para a equipe. As mensagens ficam salvas neste navegador.</p>
+
+      <form class="formulario" id="form-contato" style="max-width: 720px;" novalidate>
+        <div class="campo">
+          <label class="form-label" for="nome">Nome</label>
+          <input class="form-control" type="text" id="nome" name="nome" placeholder="Ex.: Doug Walker" required minlength="3" maxlength="40" pattern="[A-Za-zÀ-ÿ ]{3,40}" autocomplete="name">
+          <span class="dica form-text">Somente letras, de 3 a 40 caracteres.</span>
+        </div>
+
+        <div class="campo">
+          <label class="form-label" for="email">E-mail</label>
+          <input class="form-control" type="email" id="email" name="email" placeholder="voce@exemplo.com" required autocomplete="email">
+          <span class="dica form-text">Usaremos só para responder.</span>
+        </div>
+
+        <div class="campo campo-largo">
+          <label class="form-label" for="assunto">Assunto</label>
+          <select class="form-select" id="assunto" name="assunto" required>
+            <option value="">Selecione</option>
+            <option>Dúvida sobre o jogo</option>
+            <option>Sugestão de conteúdo</option>
+            <option>Erro ou informação incorreta</option>
+            <option>Outro assunto</option>
+          </select>
+        </div>
+
+        <div class="campo campo-largo">
+          <label class="form-label" for="texto">Mensagem</label>
+          <textarea class="form-control" id="texto" name="mensagem" placeholder="Conte o que você precisa" required minlength="10" maxlength="500"></textarea>
+          <span class="dica form-text" id="contador-texto">0 / 500</span>
+        </div>
+
+        <p class="mensagem" id="mensagem" role="status"></p>
+
+        <div class="campo-largo">
+          <button type="submit" class="btn btn-dark">Enviar mensagem</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="secao contato-ajuda" aria-labelledby="titulo-ajuda">
+      <h2 id="titulo-ajuda">Antes de escrever</h2>
+      <div class="card card-body painel">
+        <ul>
+          <li>Dúvidas de iniciantes costumam estar no <a href="guia.html">guia dos primeiros dias</a>.</li>
+          <li>Para detalhes de cada cidade, veja o <a href="mapa.html">mapa de Knox Country</a>.</li>
+          <li>O conteúdo oficial fica na <a class="externo" href="https://pzwiki.net/wiki/Project_Zomboid_Wiki" target="_blank" rel="noopener">wiki oficial</a>.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo container">
+      <p>Projeto acadêmico fã-feito. Project Zomboid pertence à The Indie Stone.</p>
+      <div class="rodape-links">
+        <a href="jogo.html">O jogo</a>
+        <a href="guia.html">Guia</a>
+        <a href="cemiterio.html">Cemitério</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/fundo.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/musica.js"></script>
+  <script src="js/contato.js"></script>
+</body>
+</html>

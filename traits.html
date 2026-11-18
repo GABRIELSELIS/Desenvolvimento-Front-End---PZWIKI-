@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lista de traços positivos e negativos de Project Zomboid: custo em pontos, efeitos, perícias e incompatibilidades.">
+  <title>PZ Wiki | Traits</title>
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icones/icone-32.png">
+  <link rel="apple-touch-icon" href="img/icones/icone-180.png">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-barra container">
+      <a class="marca" href="index.html" aria-label="Project Zomboid Wiki, página inicial">
+        <img src="img/logo.png" alt="Project Zomboid" width="97" height="64">
+        <span class="marca-texto">Wiki fã-feita</span>
+      </a>
+      <button class="menu-botao btn btn-outline-light" id="menu-botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <div class="wiki container">
+    <nav class="lateral collapse d-md-block" id="menu" aria-label="Principal">
+      <h2 class="lateral-titulo">Navegação</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="jogo.html">O jogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="mapa.html">Mapa</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Jogabilidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="gameplay.html">Gameplay</a></li>
+        <li class="nav-item"><a class="nav-link" href="personagem.html">Personagem</a></li>
+        <li class="nav-item"><a class="nav-link" href="traits.html">Traits</a></li>
+        <li class="nav-item"><a class="nav-link" href="zumbis.html">Zumbis</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Comunidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link" href="guia.html">Guia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cemiterio.html">Cemitério</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Links</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="externo nav-link" href="https://pzwiki.net/wiki/Project_Zomboid_Wiki" target="_blank" rel="noopener">Wiki oficial</a></li>
+      </ul>
+    </nav>
+
+    <main class="principal">
+      <p class="trilha"><a href="index.html">Início</a> › <a href="personagem.html">Personagem</a> › Traits</p>
+      <h1>Traits</h1>
+      <p class="lide">Traits (traços) são as características do seu sobrevivente. Os positivos custam pontos na criação do personagem e dão vantagens que podem decidir uma partida inteira; os negativos devolvem pontos em troca de desvantagens.</p>
+
+      <section class="secao" aria-labelledby="t-como">
+        <h2 id="t-como">Como funcionam os pontos</h2>
+        <ul>
+          <li><strong>Positivos gastam pontos:</strong> o custo aparece com sinal de menos (por exemplo, <span class="custo">-4</span>).</li>
+          <li><strong>Negativos devolvem pontos:</strong> o valor aparece com sinal de mais (por exemplo, <span class="custo custo-negativo">+4</span>) e eles ficam na seção <a href="#t-negativos">Traços negativos</a>, logo abaixo dos positivos.</li>
+          <li><strong>Incompatibilidades:</strong> alguns traços não podem ser escolhidos juntos, como Stout e Weak.</li>
+          <li><strong>Profissão:</strong> algumas profissões já dão traços de graça. Nesse caso, a versão paga do mesmo traço fica bloqueada.</li>
+        </ul>
+      </section>
+
+      <section class="secao" aria-labelledby="t-positivos">
+        <h2 id="t-positivos">Traços positivos</h2>
+        <p>Em ordem alfabética. Os nomes das perícias e dos traços ficam em inglês, como no jogo e na wiki.</p>
+        <div class="tabela-rolagem">
+          <table class="tabela tabela-tracos">
+            <caption>49 traços positivos listados até agora</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="col-icone">Ícone</th>
+                <th scope="col">Traço</th>
+                <th scope="col">Custo</th>
+                <th scope="col">Efeito</th>
+                <th scope="col">Incompatível com</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="adrenaline-junkie">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/adrenalinejunkie.png" alt="Ícone do traço Adrenaline Junkie" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Adrenaline Junkie</th>
+                <td><span class="custo">-4</span></td>
+                <td>Move-se mais rápido quando está muito em pânico.<ul><li>Soma um bônus fixo de 0,20 ou 0,25 à velocidade base nos níveis de pânico assustado e aterrorizado, o que aumenta a velocidade de andar, correr e disparar.</li></ul></td>
+                <td>Agoraphobic, Claustrophobic, Cowardly, Desensitized</td>
+              </tr>
+              <tr id="angler">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/fishingangler.png" alt="Ícone do traço Angler" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Angler</th>
+                <td><span class="custo">-4</span></td>
+                <td>+1 Fishing.<ul><li>Sabe fazer e consertar uma vara de pescar e fazer isca (chum).</li><li>Melhora o Foraging para insetos.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="artisan">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/artisan.png" alt="Ícone do traço Artisan" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Artisan</th>
+                <td><span class="custo">-2</span></td>
+                <td>Melhor em cerâmica e vidro.<ul><li>+1 Glassmaking, +1 Pottery.</li><li>Libera várias receitas de vidro.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="athletic">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/athletic.png" alt="Ícone do traço Athletic" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Athletic</th>
+                <td><span class="custo">-10</span></td>
+                <td>Corre mais rápido e por mais tempo sem se cansar.<ul><li>+4 Fitness.</li><li>+20% de velocidade ao correr e ao disparar, e -20% de perda de resistência nessas ações (pelo próprio traço).</li></ul></td>
+                <td>High Weight, Fit, Very High Weight, Out of Shape, Unfit, Very Low Weight, Smoker</td>
+              </tr>
+              <tr id="baseball-player">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/baseballplayer.png" alt="Ícone do traço Baseball Player" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Baseball Player</th>
+                <td><span class="custo">-4</span></td>
+                <td>+1 Long Blunt.<ul><li>Sabe entalhar tacos de beisebol.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="blacksmith-knowledge">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/blacksmith.png" alt="Ícone do traço Blacksmith Knowledge" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Blacksmith Knowledge</th>
+                <td><span class="custo">-6</span></td>
+                <td>Pode usar uma bigorna para criar itens de metal.<ul><li>+1 Maintenance, +2 Blacksmithing.</li><li>Libera várias receitas.</li></ul></td>
+                <td>Blacksmith Knowledge (versão da profissão)</td>
+              </tr>
+              <tr id="brave">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/brave.png" alt="Ícone do traço Brave" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Brave</th>
+                <td><span class="custo">-4</span></td>
+                <td>Menos propenso a entrar em pânico.<ul><li>Pânico em 30%, exceto terrores noturnos e fobias.</li></ul></td>
+                <td>Cowardly, Agoraphobic, Claustrophobic, Desensitized</td>
+              </tr>
+              <tr id="brawler">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/brawler.png" alt="Ícone do traço Brawler" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Brawler</th>
+                <td><span class="custo">-6</span></td>
+                <td>+1 Axe e +1 Long Blunt.</td>
+                <td>—</td>
+              </tr>
+              <tr id="bushcrafter">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/wildernessknowledge.png" alt="Ícone do traço Bushcrafter" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Bushcrafter</th>
+                <td><span class="custo">-8</span></td>
+                <td>Encontra ervas medicinais, prepara remédios e emplastros e faz ferramentas simples de pedra e osso. Acende fogueiras mais rápido.<ul><li>+1 Carving, +1 Foraging, +1 Knapping, +1 Maintenance.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="cat-s-eyes">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/nightvision.png" alt="Ícone do traço Cat’s Eyes" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Cat&#x27;s Eyes</th>
+                <td><span class="custo">-3</span></td>
+                <td>Enxerga melhor à noite.<ul><li>+20% de visão noturna.</li><li>Melhora o Foraging.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="crafty">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/crafty.png" alt="Ícone do traço Crafty" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Crafty</th>
+                <td><span class="custo">-3</span></td>
+                <td>Mais XP nas perícias de criação.<ul><li>130% de XP em todas as perícias de criação.</li></ul></td>
+                <td>Fast Learner, Slow Learner</td>
+              </tr>
+              <tr id="dextrous">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/dextrous.png" alt="Ícone do traço Dextrous" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Dextrous</th>
+                <td><span class="custo">-2</span></td>
+                <td>Transfere itens do inventário rapidamente, sobe cordas mais rápido (com menos chance de cair) e saca armas mais depressa.<ul><li>50% do tempo de transferência de inventário.</li></ul></td>
+                <td>All Thumbs</td>
+              </tr>
+              <tr id="eagle-eyed">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/eagleeyed.png" alt="Ícone do traço Eagle Eyed" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Eagle Eyed</th>
+                <td><span class="custo">-4</span></td>
+                <td>A visibilidade some mais devagar, o arco de visão é maior e as miras funcionam melhor a longa distância.<ul><li>Campo de visão mais amplo.</li><li>Melhora o Foraging.</li></ul></td>
+                <td>Short Sighted</td>
+              </tr>
+              <tr id="fast-healer">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/fasthealer.png" alt="Ícone do traço Fast Healer" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Fast Healer</th>
+                <td><span class="custo">-6</span></td>
+                <td>Recupera-se rápido de ferimentos e doenças.<ul><li>Não vale para fadiga de exercício. Ferimentos recentes têm menos gravidade.</li><li>Inclui arranhões, lacerações, balas alojadas, ferimentos profundos (com ou sem vidro), mordidas e fraturas.</li></ul></td>
+                <td>Slow Healer</td>
+              </tr>
+              <tr id="fast-learner">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/fastlearner.png" alt="Ícone do traço Fast Learner" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Fast Learner</th>
+                <td><span class="custo">-6</span></td>
+                <td>Aumenta o ganho de XP.<ul><li>130% de XP em todas as perícias, exceto Strength e Fitness.</li></ul></td>
+                <td>Crafty, Slow Learner</td>
+              </tr>
+              <tr id="fast-reader">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/fastreader.png" alt="Ícone do traço Fast Reader" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Fast Reader</th>
+                <td><span class="custo">-2</span></td>
+                <td>Leva menos tempo para ler livros.<ul><li>130% de velocidade de leitura.</li></ul></td>
+                <td>Slow Reader, Illiterate</td>
+              </tr>
+              <tr id="first-aider">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/firstaid.png" alt="Ícone do traço First Aider" width="36" height="36" loading="lazy"></td>
+                <th scope="row">First Aider</th>
+                <td><span class="custo">-2</span></td>
+                <td>+1 First Aid.</td>
+                <td>—</td>
+              </tr>
+              <tr id="fit">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/fit.png" alt="Ícone do traço Fit" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Fit</th>
+                <td><span class="custo">-6</span></td>
+                <td>+2 Fitness.</td>
+                <td>Athletic, Very High Weight, Out of Shape, High Weight, Unfit</td>
+              </tr>
+              <tr id="former-scout">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/formerscout.png" alt="Ícone do traço Former Scout" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Former Scout</th>
+                <td><span class="custo">-6</span></td>
+                <td>Acende fogueiras mais rápido.<ul><li>+1 First Aid, +1 Fishing, +1 Foraging.</li><li>Sabe fazer e consertar uma vara de pescar e fazer isca.</li><li>Melhora o Foraging.</li><li>Acende mais rápido fogueiras com Notched Plank.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="gardener">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/gardener.png" alt="Ícone do traço Gardener" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Gardener</th>
+                <td><span class="custo">-2</span></td>
+                <td>+1 Agriculture.<ul><li>Melhora o Foraging.</li><li>Libera várias receitas.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="graceful">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/graceful.png" alt="Ícone do traço Graceful" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Graceful</th>
+                <td><span class="custo">-4</span></td>
+                <td>Faz menos barulho ao se mover.<ul><li>60% do raio de som dos passos.</li></ul></td>
+                <td>Clumsy</td>
+              </tr>
+              <tr id="gymnast">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/gymnast.png" alt="Ícone do traço Gymnast" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Gymnast</th>
+                <td><span class="custo">-5</span></td>
+                <td>+1 Lightfooted e +1 Nimble.</td>
+                <td>—</td>
+              </tr>
+              <tr id="handy">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/handy.png" alt="Ícone do traço Handy" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Handy</th>
+                <td><span class="custo">-8</span></td>
+                <td>Construções mais rápidas e mais resistentes.<ul><li>+1 Carpentry, +1 Carving, +1 Maintenance, +1 Masonry.</li><li>+100 de vida (HP) em todas as construções.</li><li>Aumenta a velocidade de construção (cerca de 11%).</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="herbalist">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/herbalist.png" alt="Ícone do traço Herbalist" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Herbalist</th>
+                <td><span class="custo">-4</span></td>
+                <td>Encontra ervas medicinais e prepara remédios e emplastros com elas.<ul><li>+1 Foraging.</li><li>Identifica alimentos silvestres venenosos.</li><li>Melhora o Foraging. Libera várias receitas.</li></ul></td>
+                <td>Herbalist (versão da profissão)</td>
+              </tr>
+              <tr id="hiker">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/hiker.png" alt="Ícone do traço Hiker" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Hiker</th>
+                <td><span class="custo">-5</span></td>
+                <td>+1 Foraging e +1 Trapping.<ul><li>Melhora o Foraging.</li><li>Libera várias receitas de armadilhas.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="hunter">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/hunter.png" alt="Ícone do traço Hunter" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Hunter</th>
+                <td><span class="custo">-8</span></td>
+                <td>+1 Aiming, +1 Butchering, +1 Short Blade, +1 Sneaking e +1 Tracking.<ul><li>Melhora o Foraging.</li><li>Libera várias receitas de armadilhas e troféus.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="inconspicuous">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/inconspicuous.png" alt="Ícone do traço Inconspicuous" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Inconspicuous</th>
+                <td><span class="custo">-4</span></td>
+                <td>Menos chance de ser notado pelos zumbis.<ul><li>50% de chance de os zumbis te notarem.</li></ul></td>
+                <td>Conspicuous</td>
+              </tr>
+              <tr id="inventive">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/inventive.png" alt="Ícone do traço Inventive" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Inventive</th>
+                <td><span class="custo">-2</span></td>
+                <td>Exige menos nível de perícia para pesquisar receitas em itens ou aprendê-las automaticamente.<ul><li>Reduz em 1 os pontos de perícia do aprendizado automático.</li></ul></td>
+                <td>Inventive (versão da profissão)</td>
+              </tr>
+              <tr id="iron-gut">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/irongut.png" alt="Ícone do traço Iron Gut" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Iron Gut</th>
+                <td><span class="custo">-2</span></td>
+                <td>Menos chance de intoxicação alimentar.<ul><li>Sem doença por ovos crus ou água contaminada.</li></ul></td>
+                <td>Weak Stomach</td>
+              </tr>
+              <tr id="keen-cook">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/cook.png" alt="Ícone do traço Keen Cook" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Keen Cook</th>
+                <td><span class="custo">-3</span></td>
+                <td>Conhece receitas de culinária.<ul><li>+2 Cooking, +1 Butchering.</li><li>Melhora o Foraging. Libera várias receitas de Culinária.</li></ul></td>
+                <td>Keen Cook (versão da profissão)</td>
+              </tr>
+              <tr id="keen-hearing">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/keenhearing.png" alt="Ícone do traço Keen Hearing" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Keen Hearing</th>
+                <td><span class="custo">-6</span></td>
+                <td>Raio de percepção maior.<ul><li>200% de raio de percepção. Zumbis que chegam por trás ficam visíveis bem mais cedo.</li></ul></td>
+                <td>Deaf, Hard of Hearing</td>
+              </tr>
+              <tr id="light-eater">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/lighteater.png" alt="Ícone do traço Light Eater" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Light Eater</th>
+                <td><span class="custo">-2</span></td>
+                <td>Precisa comer com menos frequência.<ul><li>75% de fome.</li></ul></td>
+                <td>Hearty Appetite, Very High Weight</td>
+              </tr>
+              <tr id="low-thirst">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/lowthirst.png" alt="Ícone do traço Low Thirst" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Low Thirst</th>
+                <td><span class="custo">-2</span></td>
+                <td>Precisa de menos água para sobreviver.<ul><li>50% de sede.</li></ul></td>
+                <td>High Thirst</td>
+              </tr>
+              <tr id="mason">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/mason.png" alt="Ícone do traço Mason" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Mason</th>
+                <td><span class="custo">-2</span></td>
+                <td>Melhor em construções de pedra e tijolo.<ul><li>+2 Masonry.</li><li>Libera várias receitas.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="nutritionist">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/nutritionist.png" alt="Ícone do traço Nutritionist" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Nutritionist</th>
+                <td><span class="custo">-2</span></td>
+                <td>Pode ver os valores nutricionais de qualquer alimento.<ul><li>Permite ver os valores nutricionais de qualquer alimento, até os que não estão embalados.</li><li>Melhora o Foraging.</li></ul></td>
+                <td>Nutritionist (versão da profissão)</td>
+              </tr>
+              <tr id="organized">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/organized.png" alt="Ícone do traço Organized" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Organized</th>
+                <td><span class="custo">-4</span></td>
+                <td>Aumenta a capacidade de inventário dos containers.<ul><li>130% de capacidade em todos os containers, incluindo caixas, armários e carros.</li></ul></td>
+                <td>Disorganized</td>
+              </tr>
+              <tr id="outdoorsy">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/outdoorsman.png" alt="Ícone do traço Outdoorsy" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Outdoorsy</th>
+                <td><span class="custo">-2</span></td>
+                <td>Sofre menos com clima severo.<ul><li>10% de chance de pegar resfriado. 1% ou 1,25% de chance de ser arranhado ou lacerado ao andar ou correr por árvores.</li><li>Melhora o Foraging.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="resilient">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/resilient.png" alt="Ícone do traço Resilient" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Resilient</th>
+                <td><span class="custo">-4</span></td>
+                <td>Menos propenso a doenças.<br>Zumbificação mais lenta.<ul><li>75% da velocidade de progressão da zumbificação, 45% de chance de pegar resfriado, 80% da força do resfriado e 50% da velocidade de progressão do resfriado.</li></ul></td>
+                <td>Prone to Illness</td>
+              </tr>
+              <tr id="runner">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/jogger.png" alt="Ícone do traço Runner" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Runner</th>
+                <td><span class="custo">-4</span></td>
+                <td>+1 Sprinting.</td>
+                <td>—</td>
+              </tr>
+              <tr id="sewer">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/tailor.png" alt="Ícone do traço Sewer" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Sewer</th>
+                <td><span class="custo">-4</span></td>
+                <td>+1 Tailoring.<ul><li>Libera várias receitas.</li></ul></td>
+                <td>—</td>
+              </tr>
+              <tr id="speed-demon">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/speeddemon.png" alt="Ícone do traço Speed Demon" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Speed Demon</th>
+                <td><span class="custo">-1</span></td>
+                <td>Dirige muito rápido.<ul><li>200% de velocidade de troca de marcha e 115% de velocidade máxima em todos os veículos.</li></ul></td>
+                <td>Sunday Driver</td>
+              </tr>
+              <tr id="stout">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/stout.png" alt="Ícone do traço Stout" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Stout</th>
+                <td><span class="custo">-6</span></td>
+                <td>Mais empurrão (knockback) com armas corpo a corpo e mais capacidade de carga.<ul><li>+2 Strength.</li></ul></td>
+                <td>Weak, Strong, Puny</td>
+              </tr>
+              <tr id="strong">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/strong.png" alt="Ícone do traço Strong" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Strong</th>
+                <td><span class="custo">-10</span></td>
+                <td>Mais empurrão (knockback) com armas corpo a corpo e mais capacidade de carga.<ul><li>+4 Strength.</li><li>+40% de poder de empurrão (o dano não aumenta).</li></ul></td>
+                <td>Stout, Weak, Puny</td>
+              </tr>
+              <tr id="target-shooter">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/target-shooter.png" alt="Ícone do traço Target Shooter" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Target Shooter</th>
+                <td><span class="custo">-5</span></td>
+                <td>+1 Aiming.</td>
+                <td>—</td>
+              </tr>
+              <tr id="thick-skinned">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/thickskinned.png" alt="Ícone do traço Thick-skinned" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Thick-skinned</th>
+                <td><span class="custo">-8</span></td>
+                <td>Menos chance de ser arranhado ou mordido.<ul><li>Multiplica por 1,3 a chance de não ser ferido por um ataque de zumbi (base de 15%, modificada pela perícia da arma). Também muda a chance de danificar roupas ao passar por árvores para 1 em 13.</li></ul></td>
+                <td>Thin-skinned</td>
+              </tr>
+              <tr id="tinkerer">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/tinkerer.png" alt="Ícone do traço Tinkerer" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Tinkerer</th>
+                <td><span class="custo">-4</span></td>
+                <td>+1 Maintenance.</td>
+                <td>—</td>
+              </tr>
+              <tr id="vehicle-knowledge">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/mechanics.png" alt="Ícone do traço Vehicle Knowledge" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Vehicle Knowledge</th>
+                <td><span class="custo">-3</span></td>
+                <td>Conhece modelos de veículos comuns e comerciais e seus reparos.<ul><li>+1 Mechanics.</li><li>Pode consertar veículos padrão e pesados.</li></ul></td>
+                <td>Vehicle Knowledge (versão da profissão)</td>
+              </tr>
+              <tr id="wakeful">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/needslesssleep.png" alt="Ícone do traço Wakeful" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Wakeful</th>
+                <td><span class="custo">-3</span></td>
+                <td>Precisa dormir menos.<ul><li>-30% na taxa de aumento da fadiga e +10% de eficiência do sono.</li></ul></td>
+                <td>Sleepyhead</td>
+              </tr>
+              <tr id="whittler">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/whittler.png" alt="Ícone do traço Whittler" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Whittler</th>
+                <td><span class="custo">-2</span></td>
+                <td>Sabe entalhar objetos de madeira e osso.<ul><li>+2 Carving.</li><li>Pode fazer Bone Fishing Hook e Bone Sewing Needle e afiar ossos de animais.</li><li>Melhora o Foraging.</li></ul></td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="secao" aria-labelledby="t-negativos">
+        <h2 id="t-negativos">Traços negativos</h2>
+        <p>Em ordem alfabética. Cada traço negativo devolve pontos, que você pode gastar em traços positivos. Os nomes ficam em inglês, como no jogo e na wiki.</p>
+        <div class="tabela-rolagem">
+          <table class="tabela tabela-tracos">
+            <caption>32 traços negativos listados (Build 42)</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="col-icone">Ícone</th>
+                <th scope="col">Traço</th>
+                <th scope="col">Pontos</th>
+                <th scope="col">Efeito</th>
+                <th scope="col">Incompatível com</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="agoraphobic">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-agoraphobic.png" alt="Ícone do traço Agoraphobic" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Agoraphobic</th>
+                <td><span class="custo custo-negativo">+4</span></td>
+                <td>Entra em pânico quando está ao ar livre.</td>
+                <td>Adrenaline Junkie, Brave, Claustrophobic, Desensitized</td>
+              </tr>
+              <tr id="all-thumbs">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-allthumbs.png" alt="Ícone do traço All Thumbs" width="36" height="36" loading="lazy"></td>
+                <th scope="row">All Thumbs</th>
+                <td><span class="custo custo-negativo">+2</span></td>
+                <td>Mexe nas coisas com menos jeito.<ul><li>Transferências de inventário mais lentas.</li><li>Não consegue fabricar itens enquanto anda.</li><li>Sobe cordas mais devagar e tem mais chance de cair.</li><li>Demora mais para empunhar a arma.</li></ul></td>
+                <td>Dextrous</td>
+              </tr>
+              <tr id="claustrophobic">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-claustophobic.png" alt="Ícone do traço Claustrophobic" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Claustrophobic</th>
+                <td><span class="custo custo-negativo">+4</span></td>
+                <td>Entra em pânico em cômodos pequenos.</td>
+                <td>Adrenaline Junkie, Agoraphobic, Brave, Desensitized</td>
+              </tr>
+              <tr id="clumsy">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-clumsy.png" alt="Ícone do traço Clumsy" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Clumsy</th>
+                <td><span class="custo custo-negativo">+2</span></td>
+                <td>Faz mais barulho ao se mover.</td>
+                <td>Graceful</td>
+              </tr>
+              <tr id="conspicuous">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-conspicuous.png" alt="Ícone do traço Conspicuous" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Conspicuous</th>
+                <td><span class="custo custo-negativo">+4</span></td>
+                <td>Zumbis têm mais chance de notar você.</td>
+                <td>Inconspicuous</td>
+              </tr>
+              <tr id="cowardly">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-cowardly.png" alt="Ícone do traço Cowardly" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Cowardly</th>
+                <td><span class="custo custo-negativo">+2</span></td>
+                <td>Especialmente propenso a entrar em pânico.</td>
+                <td>Adrenaline Junkie, Brave, Desensitized</td>
+              </tr>
+              <tr id="deaf">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-deaf.png" alt="Ícone do traço Deaf" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Deaf</th>
+                <td><span class="custo custo-negativo">+12</span></td>
+                <td>Não ouve nenhum som.</td>
+                <td>Hard of Hearing, Keen Hearing</td>
+              </tr>
+              <tr id="disorganized">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-disorganized.png" alt="Ícone do traço Disorganized" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Disorganized</th>
+                <td><span class="custo custo-negativo">+6</span></td>
+                <td>Menor capacidade dos contêineres.<ul><li>Afeta contêineres do mundo e mochilas, não o inventário principal.</li></ul></td>
+                <td>Organized</td>
+              </tr>
+              <tr id="fast-metabolism">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-weightloss.png" alt="Ícone do traço Fast Metabolism" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Fast Metabolism</th>
+                <td><span class="custo custo-negativo">+2</span></td>
+                <td>Tende a perder peso.<ul><li>Começa com o traço Low Weight (-1 Fitness, pouca força e resistência, mais propenso a ferimentos).</li><li>O traço de peso é dado automaticamente e não pode ser escolhido sozinho.</li></ul></td>
+                <td>Slow Metabolism</td>
+              </tr>
+              <tr id="fear-of-blood">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-hemophobic.png" alt="Ícone do traço Fear of Blood" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Fear of Blood</th>
+                <td><span class="custo custo-negativo">+5</span></td>
+                <td>Sente pavor de sangue.<ul><li>Entra em pânico ao aplicar primeiros socorros em si mesmo.</li><li>Não consegue aplicar primeiros socorros em outras pessoas.</li><li>Fica estressado ao ver sangue.</li></ul></td>
+                <td>Desensitized</td>
+              </tr>
+              <tr id="hard-of-hearing">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-hardofhearing.png" alt="Ícone do traço Hard of Hearing" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Hard of Hearing</th>
+                <td><span class="custo custo-negativo">+4</span></td>
+                <td>Ouve pior.<ul><li>Raio de percepção menor.</li><li>Alcance de audição menor.</li></ul></td>
+                <td>Deaf, Keen Hearing</td>
+              </tr>
+              <tr id="hearty-appetite">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-heartyappetite.png" alt="Ícone do traço Hearty Appetite" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Hearty Appetite</th>
+                <td><span class="custo custo-negativo">+4</span></td>
+                <td>Precisa comer com mais frequência.</td>
+                <td>Light Eater, Very Low Weight</td>
+              </tr>
+              <tr id="high-thirst">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-highthirst.png" alt="Ícone do traço High Thirst" width="36" height="36" loading="lazy"></td>
+                <th scope="row">High Thirst</th>
+                <td><span class="custo custo-negativo">+2</span></td>
+                <td>Precisa beber mais água para sobreviver.</td>
+                <td>Low Thirst</td>
+              </tr>
+              <tr id="illiterate">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-illiterate.png" alt="Ícone do traço Illiterate" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Illiterate</th>
+                <td><span class="custo custo-negativo">+10</span></td>
+                <td>Não consegue ler livros nem textos do mundo.</td>
+                <td>Fast Reader, Slow Reader</td>
+              </tr>
+              <tr id="out-of-shape">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-out_of_shape.png" alt="Ícone do traço Out of Shape" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Out of Shape</th>
+                <td><span class="custo custo-negativo">+6</span></td>
+                <td>-2 Fitness.<ul><li>Pouca resistência e recuperação de resistência lenta.</li></ul></td>
+                <td>Athletic, Fit, Unfit</td>
+              </tr>
+              <tr id="prone-to-illness">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-hypercondriac.png" alt="Ícone do traço Prone to Illness" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Prone to Illness</th>
+                <td><span class="custo custo-negativo">+4</span></td>
+                <td>Mais propenso a doenças.<ul><li>Zumbificação mais rápida.</li></ul></td>
+                <td>Resilient</td>
+              </tr>
+              <tr id="puny">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-feeble.png" alt="Ícone do traço Puny" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Puny</th>
+                <td><span class="custo custo-negativo">+10</span></td>
+                <td>-5 Strength.<ul><li>Empurra muito menos os inimigos em combate corpo a corpo.</li><li>Capacidade de carga extremamente pequena.</li></ul></td>
+                <td>Weak, Stout, Strong</td>
+              </tr>
+              <tr id="reluctant-fighter">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-pacifist.png" alt="Ícone do traço Reluctant Fighter" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Reluctant Fighter</th>
+                <td><span class="custo custo-negativo">+5</span></td>
+                <td>Ganha menos XP de combate.</td>
+                <td>—</td>
+              </tr>
+              <tr id="restless-sleeper">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-insomniac.png" alt="Ícone do traço Restless Sleeper" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Restless Sleeper</th>
+                <td><span class="custo custo-negativo">+6</span></td>
+                <td>Perde o cansaço mais devagar enquanto dorme.</td>
+                <td>—</td>
+              </tr>
+              <tr id="short-of-breath">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-asthmatic.png" alt="Ícone do traço Short of Breath" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Short of Breath</th>
+                <td><span class="custo custo-negativo">+5</span></td>
+                <td>Perde resistência mais rápido.</td>
+                <td>—</td>
+              </tr>
+              <tr id="short-sighted">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-shortsighted.png" alt="Ícone do traço Short Sighted" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Short Sighted</th>
+                <td><span class="custo custo-negativo">+2</span></td>
+                <td>Enxerga menos longe.<ul><li>Distância de visão menor e a visibilidade some mais devagar.</li><li>Miras de armas funcionam pior.</li></ul></td>
+                <td>Eagle Eyed</td>
+              </tr>
+              <tr id="sleepyhead">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-needsmoresleep.png" alt="Ícone do traço Sleepyhead" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Sleepyhead</th>
+                <td><span class="custo custo-negativo">+4</span></td>
+                <td>Precisa dormir mais.</td>
+                <td>Wakeful</td>
+              </tr>
+              <tr id="slow-healer">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-slowhealer.png" alt="Ícone do traço Slow Healer" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Slow Healer</th>
+                <td><span class="custo custo-negativo">+3</span></td>
+                <td>Demora mais para se recuperar de ferimentos e doenças.</td>
+                <td>Fast Healer</td>
+              </tr>
+              <tr id="slow-learner">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-slowlearner.png" alt="Ícone do traço Slow Learner" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Slow Learner</th>
+                <td><span class="custo custo-negativo">+6</span></td>
+                <td>Ganha menos XP.</td>
+                <td>Crafty, Fast Learner</td>
+              </tr>
+              <tr id="slow-metabolism">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-weightgain.png" alt="Ícone do traço Slow Metabolism" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Slow Metabolism</th>
+                <td><span class="custo custo-negativo">+2</span></td>
+                <td>Tende a ganhar peso.<ul><li>Começa com o traço High Weight (-1 Fitness, corre mais devagar, pouca resistência, mais propenso a ferimentos).</li><li>O traço de peso é dado automaticamente e não pode ser escolhido sozinho.</li></ul></td>
+                <td>Fast Metabolism</td>
+              </tr>
+              <tr id="slow-reader">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-slowreader.png" alt="Ícone do traço Slow Reader" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Slow Reader</th>
+                <td><span class="custo custo-negativo">+2</span></td>
+                <td>Demora mais para ler livros e textos.</td>
+                <td>Fast Reader, Illiterate</td>
+              </tr>
+              <tr id="smoker">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-smoker.png" alt="Ícone do traço Smoker" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Smoker</th>
+                <td><span class="custo custo-negativo">+3</span></td>
+                <td>A infelicidade sobe quando está sem fumar.<ul><li>Fumar reduz o estresse e a infelicidade.</li></ul></td>
+                <td>Athletic</td>
+              </tr>
+              <tr id="sunday-driver">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-sundaydriver.png" alt="Ícone do traço Sunday Driver" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Sunday Driver</th>
+                <td><span class="custo custo-negativo">+1</span></td>
+                <td>Dirige muito devagar.</td>
+                <td>Speed Demon</td>
+              </tr>
+              <tr id="thin-skinned">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-thinskinned.png" alt="Ícone do traço Thin-skinned" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Thin-skinned</th>
+                <td><span class="custo custo-negativo">+8</span></td>
+                <td>Maior chance de ser arranhado ou mordido por zumbis.</td>
+                <td>Thick-skinned</td>
+              </tr>
+              <tr id="unfit">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-unfit.png" alt="Ícone do traço Unfit" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Unfit</th>
+                <td><span class="custo custo-negativo">+10</span></td>
+                <td>-4 Fitness.<ul><li>Resistência e recuperação de resistência muito baixas.</li></ul></td>
+                <td>Athletic, Fit, Out of Shape</td>
+              </tr>
+              <tr id="weak">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-weak.png" alt="Ícone do traço Weak" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Weak</th>
+                <td><span class="custo custo-negativo">+6</span></td>
+                <td>-2 Strength.<ul><li>Empurra menos os inimigos em combate corpo a corpo.</li><li>Capacidade de carga menor.</li></ul></td>
+                <td>Stout, Strong, Puny</td>
+              </tr>
+              <tr id="weak-stomach">
+                <td class="col-icone"><img class="icone-traco" src="img/traits/neg-weakstomach.png" alt="Ícone do traço Weak Stomach" width="36" height="36" loading="lazy"></td>
+                <th scope="row">Weak Stomach</th>
+                <td><span class="custo custo-negativo">+2</span></td>
+                <td>Maior chance de intoxicação alimentar.</td>
+                <td>Iron Gut</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <nav class="cidade-nav" aria-label="Páginas relacionadas">
+        <a class="btn btn-dark" href="personagem.html" rel="prev">&larr; Personagem</a>
+        <a class="btn btn-dark" href="zumbis.html" rel="next">Zumbis &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo container">
+      <p>Projeto acadêmico fã-feito. Project Zomboid pertence à The Indie Stone.</p>
+      <div class="rodape-links">
+        <a href="jogo.html">O jogo</a>
+        <a href="guia.html">Guia</a>
+        <a href="cemiterio.html">Cemitério</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/fundo.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/musica.js"></script>
+</body>
+</html>

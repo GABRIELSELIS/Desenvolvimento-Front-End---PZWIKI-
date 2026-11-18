@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PZ Wiki | Criar conta</title>
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icones/icone-32.png">
+  <link rel="apple-touch-icon" href="img/icones/icone-180.png">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-barra container">
+      <a class="marca" href="index.html" aria-label="Project Zomboid Wiki, página inicial">
+        <img src="img/logo.png" alt="Project Zomboid" width="97" height="64">
+        <span class="marca-texto">Wiki fã-feita</span>
+      </a>
+      <button class="menu-botao btn btn-outline-light" id="menu-botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <div class="wiki container">
+    <nav class="lateral collapse d-md-block" id="menu" aria-label="Principal">
+      <h2 class="lateral-titulo">Navegação</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="jogo.html">O jogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="mapa.html">Mapa</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Jogabilidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="gameplay.html">Gameplay</a></li>
+        <li class="nav-item"><a class="nav-link" href="personagem.html">Personagem</a></li>
+        <li class="nav-item"><a class="nav-link" href="traits.html">Traits</a></li>
+        <li class="nav-item"><a class="nav-link" href="zumbis.html">Zumbis</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Comunidade</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link" href="guia.html">Guia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cemiterio.html">Cemitério</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      </ul>
+      <h2 class="lateral-titulo">Links</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="externo nav-link" href="https://pzwiki.net/wiki/Project_Zomboid_Wiki" target="_blank" rel="noopener">Wiki oficial</a></li>
+      </ul>
+    </nav>
+
+  <main class="principal">
+    <p class="trilha"><a href="index.html">Início</a> › Criar conta</p>
+    <section class="secao" aria-labelledby="titulo-form">
+      <h1 id="titulo-form">Criar conta</h1>
+      <p>Com uma conta você pode enviar suas próprias fotos e registrar a morte do seu sobrevivente no cemitério.</p>
+
+      <form class="formulario formulario-conta" id="form-cadastro" novalidate>
+        <div class="campo campo-largo">
+          <label class="form-label" for="nome">Nome de sobrevivente</label>
+          <input class="form-control" type="text" id="nome" name="nome" placeholder="Ex.: Doug Walker" required minlength="3" maxlength="30" pattern="[A-Za-zÀ-ÿ0-9 ]{3,30}" autocomplete="nickname">
+          <span class="dica form-text">Letras e números, de 3 a 30 caracteres.</span>
+        </div>
+
+        <div class="campo campo-largo">
+          <label class="form-label" for="email">E-mail</label>
+          <input class="form-control" type="email" id="email" name="email" placeholder="voce@exemplo.com" required autocomplete="email">
+        </div>
+
+        <div class="campo">
+          <label class="form-label" for="senha">Senha</label>
+          <input class="form-control" type="password" id="senha" name="senha" placeholder="Mínimo de 6 caracteres" required minlength="6" maxlength="64" autocomplete="new-password">
+        </div>
+
+        <div class="campo">
+          <label class="form-label" for="confirmar">Confirmar senha</label>
+          <input class="form-control" type="password" id="confirmar" name="confirmar" placeholder="Repita a senha" required autocomplete="new-password">
+        </div>
+
+        <p class="mensagem" id="mensagem" role="status"></p>
+
+        <div class="campo-largo">
+          <button type="submit" class="btn btn-dark">Criar conta</button>
+        </div>
+      </form>
+
+      <p>Já tem conta? <a id="link-login" href="login.html">Entre aqui</a>.</p>
+    </section>
+  </main>
+  </div>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo container">
+      <p>Projeto acadêmico fã-feito. Project Zomboid pertence à The Indie Stone.</p>
+      <div class="rodape-links">
+        <a href="jogo.html">O jogo</a>
+        <a href="guia.html">Guia</a>
+        <a href="cemiterio.html">Cemitério</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/fundo.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/musica.js"></script>
+  <script src="js/conta.js"></script>
+</body>
+</html>
